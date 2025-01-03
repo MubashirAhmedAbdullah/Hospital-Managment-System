@@ -29,12 +29,12 @@ export default function NavigationBar() {
                         </div>
                     </div>
                     <div className="hidden md:block">
-                        <Button
+                        <Link href={"/Auth"}><Button
                             variant="outline"
                             className="text-white w-24 h-10 text-lg bg-blue-600 hover:bg-blue-500 hover:text-white transition-transform duration-300 transform hover:scale-95"
                         >
                             Login
-                        </Button>
+                        </Button></Link>
                     </div>
                     <div className="-mr-2 flex md:hidden">
                         <button
