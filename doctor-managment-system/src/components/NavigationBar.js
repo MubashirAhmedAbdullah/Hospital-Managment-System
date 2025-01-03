@@ -21,20 +21,20 @@ export default function NavigationBar() {
                         <div className="hidden md:block">
                             <div className="flex items-baseline space-x-4">
                                 <Link href="/" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-lg">Home</Link>
-                                <Link href="/Doctors" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-lg">Doctors</Link>
-                                <Link href="/Articles" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-lg">Articles</Link>
-                                <Link href="/Appionments" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-lg">Appointments</Link>
-                                <Link href="/AboutUs" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-lg">About Us</Link>
+                                <Link href="/patient/Doctors" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-lg">Doctors</Link>
+                                <Link href="/patient/Articles" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-lg">Articles</Link>
+                                <Link href="/patient/Appionments" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-lg">Appointments</Link>
+                                <Link href="/patient/AboutUs" className="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-lg">About Us</Link>
                             </div>
                         </div>
                     </div>
                     <div className="hidden md:block">
-                        <Link href={"/Auth/Login"}><Button
+                        <Button
                             variant="outline"
                             className="text-white w-24 h-10 text-lg bg-blue-600 hover:bg-blue-500 hover:text-white transition-transform duration-300 transform hover:scale-95"
                         >
                             Login
-                        </Button></Link>
+                        </Button>
                     </div>
                     <div className="-mr-2 flex md:hidden">
                         <button
@@ -51,13 +51,13 @@ export default function NavigationBar() {
                 </div>
             </div>
 
-            <div className={`md:hidden transition-all duration-500 ${isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}>
+            <div className={`md:hidden transition-all duration-300 ${isMenuOpen ? "max-h-screen opacity-100" : "max-h-0 opacity-0 overflow-hidden"}`}>
                 <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
                     <Link href="/" className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Home</Link>
-                    <Link href="/Doctors" className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Doctors</Link>
-                    <Link href="/Articles" className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Articles</Link>
-                    <Link href="/Appionments" className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Appointments</Link>
-                    <Link href="/AboutUs" className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">About Us</Link>
+                    <Link href="/patient/Doctors" className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Doctors</Link>
+                    <Link href="/patient/Articles" className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Articles</Link>
+                    <Link href="/patient/Appionments" className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Appointments</Link>
+                    <Link href="/patient/AboutUs" className="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">About Us</Link>
                     <Button
                         variant="outline"
                         className="text-white w-full h-10 bg-blue-600 hover:bg-blue-500 hover:text-white transition-transform duration-300 transform hover:scale-110 mt-2"

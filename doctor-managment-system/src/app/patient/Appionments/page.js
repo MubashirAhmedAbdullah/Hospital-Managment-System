@@ -1,7 +1,7 @@
 
 
 
-export default function Appointments (){
+export default function (){
     return(
         <div>
             hello Appointments page
